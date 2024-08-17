@@ -32,15 +32,18 @@ Applies ISP
 ```mermaid
 classDiagram
     class Switchable {
+        <<interface>>
         +turnOn()
         +turnOff()
     }
 
     class ChannelControl {
+        <<interface>>
         +changeChannel(channel)
     }
 
     class BrightnessControl {
+        <<interface>>
         +adjustBrightness(level)
     }
 
