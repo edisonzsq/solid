@@ -29,6 +29,7 @@ classDiagram
 
     class BitcoinProcessor {
         +processPayment()
+        +processMining()
     }
 
     PaymentProcessor <|.. CreditCardProcessor
