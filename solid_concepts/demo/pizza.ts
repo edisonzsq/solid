@@ -16,16 +16,12 @@ class Pizza {
     }
   
     bake(): void {
-      console.log(`Baking a ${this.size} pizza with ${this.crust} crust and toppings: ${this.getToppings()}`);
-    }
-  
-    private getToppings(): string {
       const toppings = [];
       if (this.cheese) toppings.push("cheese");
       if (this.pepperoni) toppings.push("pepperoni");
       if (this.mushrooms) toppings.push("mushrooms");
       if (this.bacon) toppings.push("bacon");
-      return toppings.join(", ");
+      console.log(`Baking a ${this.size} pizza with ${this.crust} crust and toppings: ${this.getToppings()}`);
     }
   }
   
